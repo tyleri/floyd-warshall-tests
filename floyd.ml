@@ -4,7 +4,12 @@ let [n; e] = read_line() |> Str.(split (regexp " ")) |> List.map int_of_string
 
 let edges = Array.init n (fun _ -> Array.make n ~-1)
 
+
 let _ =
+  for i = 0 to n-1 do
+    edges.(i).(i) <- 0
+  done;
+
   for _ = 1 to e do
     let [n1; n2; w] = read_line() |> Str.(split (regexp " ")) |> List.map int_of_string in
     edges.(n1-1).(n2-1) <- w
