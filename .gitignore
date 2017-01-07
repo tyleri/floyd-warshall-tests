@@ -1,0 +1,6 @@
+.DS_Store
+_build/
+*.byte
+*.class
+test_cases/
+floyd
