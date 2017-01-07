@@ -11,7 +11,9 @@ public class floyd {
 
     for (int i = 0; i < n; i++) {
       for (int j = 0; j < n; j++) {
-        edges[i][j] = -1;
+        if (i != j) {
+          edges[i][j] = -1;
+        }
       }
     }
 
