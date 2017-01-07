@@ -47,3 +47,8 @@ input05.txt
   - ocaml:    5.54s
   - python2:  35.73s
   - python3:  49.01s
+
+## Future
+
+I may continue adding to this repository when I have time, testing the runtime
+of this algorithm with other languages.
