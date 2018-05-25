@@ -2,5 +2,9 @@
 _build/
 *.byte
 *.class
+*.native
+*.out
 test_cases/
-floyd
+
+floyd.native
+go.out
