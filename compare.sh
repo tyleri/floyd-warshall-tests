@@ -21,6 +21,7 @@ commands=(
     "./go.out"
     "./floyd.native"
     "java FloydJava"
+    "luajit floyd.lua"
 )
 
 for ix in ${!commands[*]}
