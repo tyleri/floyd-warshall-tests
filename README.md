@@ -25,28 +25,31 @@ observed when running these programs on my laptop.
 ## Results
 
 input03.txt
-  - luajit:   0.196s
-  - ocaml:    0.549s
-  - java:     1.504s
-  - go:       2.351s
-  - python2:  7.433s
-  - python3:  12.536s
+  - luajit:   0.131s
+  - rust:     0.282s
+  - ocaml:    0.373s
+  - java:     1.066s
+  - go:       2.143s
+  - python2:  4.325s
+  - python3:  6.799s
 
 input04.txt
-  - ocaml:    0.958s
-  - java:     2.097s
-  - luajit:   2.777s
-  - go:       3.214s
-  - python2:  58.300s
-  - python3:  90.017s
+  - rust:     0.419s
+  - ocaml:    0.563s
+  - java:     1.252s
+  - luajit:   1.503s
+  - go:       2.526s
+  - python2:  27.943s
+  - python3:  43.878s
 
 input05.txt
-  - ocaml:    0.734s
-  - java:     1.637s
-  - luajit:   1.690s
-  - go:       3.104s
-  - python2:  42.590s
-  - python3:  91.992s
+  - rust:     0.440s
+  - ocaml:    0.567s
+  - luajit:   1.231s
+  - java:     1.269s
+  - go:       2.501s
+  - python2:  27.652s
+  - python3:  46.368s
 
 ## Future
 

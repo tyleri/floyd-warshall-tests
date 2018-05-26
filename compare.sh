@@ -6,10 +6,11 @@ if (( $# < 1 )); then
 fi
 
 # first re-compile everything
-rm -f go.out floyd.native FloydJava.class
+rm -f go.out floyd.native FloydJava.class rust.out
 go build -o go.out floyd.go
 ocamlbuild -pkg Str floyd.native > /dev/null 2>&1
 javac FloydJava.java
+rustc -O -o rust.out floyd.rs
 
 
 # then run
@@ -22,6 +23,7 @@ commands=(
     "./floyd.native"
     "java FloydJava"
     "luajit floyd.lua"
+    "./rust.out"
 )
 
 for ix in ${!commands[*]}
