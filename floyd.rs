@@ -1,16 +1,20 @@
 use std::io;
 
-fn main() {
-    let mut input_line : String;
-    let mut split_line : Vec<usize>;
-
-    input_line = String::new();
+fn read_parse_line() -> Vec<usize> {
+    let mut input_line = String::new();
     io::stdin().read_line(&mut input_line).expect("could not read line");
 
-    split_line = input_line.split_whitespace()
-                           .map(|x| x.parse::<usize>().unwrap())
-                           .collect();
+    let split_line = input_line.split_whitespace()
+                                   .map(|x| x.parse::<usize>().unwrap())
+                                   .collect();
 
+    split_line
+}
+
+fn main() {
+    let mut split_line : Vec<usize>;
+
+    split_line = read_parse_line();
     let (n, e) = (split_line[0], split_line[1]);
 
     let mut edges : Vec<Vec<i32>> = Vec::with_capacity(n);
@@ -22,12 +26,7 @@ fn main() {
     }
 
     for _ in 0..e {
-        input_line = String::new();
-        io::stdin().read_line(&mut input_line).expect("could not read line");
-        split_line = input_line.split_whitespace()
-                               .map(|x| x.parse::<usize>().unwrap())
-                               .collect();
-
+        split_line = read_parse_line();
         let (n1, n2, w) = (split_line[0], split_line[1], split_line[2]);
         edges[n1-1][n2-1] = w as i32;
     }
@@ -45,19 +44,11 @@ fn main() {
         }
     }
 
-    input_line = String::new();
-    io::stdin().read_line(&mut input_line).expect("could not read line");
-    
-    let trials : i32 = input_line.trim().parse().unwrap();
-    // println!("test");
+    split_line = read_parse_line();
+    let trials = split_line[0];
 
     for _ in 0..trials {
-        input_line = String::new();
-        io::stdin().read_line(&mut input_line).expect("could not read line");
-        split_line = input_line.split_whitespace()
-                               .map(|x| x.parse::<usize>().unwrap())
-                               .collect();
-        
+        split_line = read_parse_line();
         let (start, end) = (split_line[0], split_line[1]);
         println!("{}", edges[start-1][end-1]);
     }
