@@ -19,37 +19,47 @@ different results.
 After seeing the difference between Go and Python, I decided to test the runtime
 of this algorithm on other languages I knew or had interest in. That's how I
 ended up creating this repository with the programs written in different
-languages. Although this is a very unscientific test, below are the results I
-observed when running these programs on my laptop.
+languages.
 
-## Results
+[Link To Results](https://docs.google.com/spreadsheets/d/15g_NpZFrtWo64qNhTpoY-S2BIzexzxzz2BNm6Wr8uew/edit?usp=sharing)
+
+## Summarized Results
 
 input03.txt
-  - luajit:   0.131s
-  - rust:     0.282s
-  - ocaml:    0.373s
-  - java:     1.066s
-  - go:       2.143s
-  - python2:  4.325s
-  - python3:  6.799s
+  - luajit:   0.1602s
+  - rust:     0.3030s
+  - ocaml:    0.3990s
+  - pypy2:    0.7616s
+  - java:     1.1634s
+  - pypy3:    1.3644s
+  - scala:    1.9828s
+  - go:       2.1626s
+  - python2:  4.8068s
+  - python3:  7.9362s
 
 input04.txt
-  - rust:     0.419s
-  - ocaml:    0.563s
-  - java:     1.252s
-  - luajit:   1.503s
-  - go:       2.526s
-  - python2:  27.943s
-  - python3:  43.878s
+  - rust:     0.3982s
+  - ocaml:    0.5454s
+  - java:     1.2722s
+  - luajit:   1.5498s
+  - scala:    2.1416s
+  - pypy2:    2.2284s
+  - go:       2.5196s
+  - pypy3:    2.6224s
+  - python2:  28.0788s
+  - python3:  45.0692s
 
 input05.txt
-  - rust:     0.440s
-  - ocaml:    0.567s
-  - luajit:   1.231s
-  - java:     1.269s
-  - go:       2.501s
-  - python2:  27.652s
-  - python3:  46.368s
+  - rust:     0.4114s
+  - ocaml:    0.5416s
+  - luajit:   1.2412s
+  - java:     1.271s
+  - scala:    2.0392s
+  - pypy2:    2.148s
+  - go:       2.5192s
+  - pypy3:    2.5372s
+  - python2:  28.2238s
+  - python3:  44.0434s
 
 ## Future
 
