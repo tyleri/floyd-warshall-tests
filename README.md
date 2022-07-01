@@ -21,8 +21,6 @@ of this algorithm on other languages I knew or had interest in. That's how I
 ended up creating this repository with the programs written in different
 languages.
 
-[Link To Results](https://docs.google.com/spreadsheets/d/15g_NpZFrtWo64qNhTpoY-S2BIzexzxzz2BNm6Wr8uew/edit?usp=sharing)
-
 ## Summarized Results
 
 input03.txt
